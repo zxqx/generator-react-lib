@@ -10,7 +10,7 @@ $ npm install <%= libraryName %>
 
 ## Usage
 
-**docs here**
+*docs here*
 
 ## Development
 
