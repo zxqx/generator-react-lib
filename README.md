@@ -2,6 +2,8 @@
 
 A react component generator with UMD build and browser testing infrastructure.
 
+<img src='https://www.dropbox.com/s/gzfwpv8zt2ckm74/generator-react-lib?raw=1' width='400px'>
+
 ## Requirements
 
 + NodeJS
