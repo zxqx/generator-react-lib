@@ -1,6 +1,6 @@
 {
   "name": "generator-react-lib",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A react component generator with UMD build and browser testing infrastructure.",
   "license": "MIT",
   "files": [
