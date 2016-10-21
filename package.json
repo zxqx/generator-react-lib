@@ -1,0 +1,41 @@
+{
+  "name": "generator-react-lib",
+  "version": "0.0.0",
+  "description": "A react component generator with UMD build and browser testing infrastructure.",
+  "license": "MIT",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "generator",
+    "plugin",
+    "component",
+    "library",
+    "boilerplate",
+    "template",
+    "scaffold",
+    "starter",
+    "kit",
+    "seed",
+    "react",
+    "webpack",
+    "babel",
+    "karma",
+    "mocha",
+    "chai",
+    "enzyme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakangelle/generator-react-lib.git"
+  },
+  "author": {
+    "name": "Zak Angelle",
+    "email": "zaknotzak@gmail.com"
+  },
+  "dependencies": {
+    "underscore.string": "^3.0.3",
+    "yeoman-generator": "^0.20.1"
+  }
+}
