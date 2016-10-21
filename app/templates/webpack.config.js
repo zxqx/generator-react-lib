@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
-const libraryName = '<%= libraryName %>';
+const libraryName = '<%= libraryNameCamelized %>';
 
 module.exports = {
   entry: __dirname + '/src/index.js',

@@ -1,10 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 export default class <%= libraryNamePascalized %> extends Component {
   render() {
     return (
       <div>
-        <%= libraryNamePascalized %>
+        **your component here**
       </div>
     );
   }

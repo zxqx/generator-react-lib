@@ -1,5 +1,5 @@
 {
-  "name": "<%= libraryName %>",
+  "name": "react-<%= libraryName %>",
   "version": "0.0.0",
   "description": "<%= libraryDescription %>",
   "main": "lib/<%= libraryNameCamelized %>.min.js",
@@ -8,6 +8,7 @@
     "test": "karma start test/karma.conf.js",
     "coverage": "cat ./coverage/lcov/lcov.info | coveralls",
     "lint": "eslint src test",
+    "postinstall": "npm run build",
     "precommit": "npm run lint",
     "preversion": "npm run build",
     "example": "node example/server.js",

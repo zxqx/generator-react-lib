@@ -10,21 +10,20 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt([
       {
         name: 'libraryName',
-        message: 'What\'s the name of your react library?',
-        default: this.libraryName.replace(/\s/g, '-'),
+        message: 'What\'s the name of your library?',
         filter: function(val) {
           return _s.slugify(val);
         }
       },
       {
         name: 'libraryDescription',
-        message: 'Describe your react library'
+        message: 'Describe your library'
       }
     ],
     function(props) {
       var asyncCount = 0;
-      this.libraryName = props.libraryName;
-      this.libraryNamePascalized = _s.capitalize(_s.camelize(this.libraryName)));
+      this.libraryName = props.libraryName.replace(/\s/g, '-').replace(/^react-/, '');
+      this.libraryNamePascalized = _s.capitalize(_s.camelize(this.libraryName));
       this.libraryNameCamelized = _s.camelize(this.libraryName);
       this.libraryDescription = props.libraryDescription;
 

@@ -2,8 +2,6 @@
 
 A react component generator with UMD build and browser testing infrastructure.
 
-<img src='https://dl.dropboxusercontent.com/s/4w9bsn1ti8zbz7b/octo.png' width='400px'>
-
 ## Requirements
 
 + NodeJS
@@ -11,12 +9,13 @@ A react component generator with UMD build and browser testing infrastructure.
 
 ## Tech Stack
 
-* [karma]() - Test runner
-* [mocha](https://mochajs.org/) - Testing framework
-* [enzyme]() - React testing utils
-* [istanbul]() - Code coverage reporting
-* [babel](https://babeljs.io/) - ES6/JSX compiler
+* [babel](https://babeljs.io/) - JS compiler
 * [webpack](https://webpack.github.io/) - UMD bundler
+* [karma](https://github.com/karma-runner/karma) - Test runner
+* [mocha](https://mochajs.org/) - Testing framework
+* [enzyme](https://github.com/airbnb/enzyme) - React testing utils
+* [istanbul](https://github.com/gotwarlost/istanbul) - Code coverage reporting
+* [eslint](http://eslint.org/) - Style linter
 
 ## Setup
 

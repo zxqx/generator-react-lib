@@ -37,7 +37,3 @@ Run tests and watch for code changes:
 ```
 $ npm test -- --watch
 ```
-
-## License
-
-MIT

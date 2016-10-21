@@ -8,7 +8,7 @@ import <%= libraryNamePascalized %> from '../src/index';
 chai.use(chaiEnzyme());
 
 describe('<<%= libraryNamePascalized %> />', () => {
-  it('renders', () => {
+  it('renders placeholder div', () => {
     const component = shallow(
       <<%= libraryNamePascalized %> />
     );
