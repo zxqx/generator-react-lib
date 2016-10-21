@@ -29,7 +29,7 @@ $ npm install -g generator-react-lib
 
 ## Usage
 
-Make a folder for your app:
+Make a folder for your lib:
 
 ```sh
 $ mkdir lib-name && cd lib-name
