@@ -18,9 +18,6 @@ module.exports = config => {
     webpack: {
       devtool: 'inline-source-map',
       module: {
-        noParse: [
-          /\/sinon\.js/
-        ],
         loaders: [
           {
             test: /\.js$/,
@@ -32,11 +29,6 @@ module.exports = config => {
             loader: 'json'
           }
         ]
-      },
-      resolve: {
-        alias: {
-          sinon: 'sinon/pkg/sinon.js'
-        }
       },
       externals: {
         'react/lib/ExecutionEnvironment': true,
