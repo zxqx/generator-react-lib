@@ -1,8 +1,7 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import chai, { expect } from 'chai';
 import chaiEnzyme from 'chai-enzyme';
-import sinon from 'sinon';
 import <%= libraryNamePascalized %> from '../src/index';
 
 chai.use(chaiEnzyme());
