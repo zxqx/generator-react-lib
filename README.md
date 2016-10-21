@@ -11,6 +11,7 @@ A react component generator with UMD build and browser testing infrastructure.
 
 ## Tech Stack
 
+* [react](https://facebook.github.io/react/) - View layer
 * [babel](https://babeljs.io/) - JS compiler
 * [webpack](https://webpack.github.io/) - UMD bundler
 * [karma](https://github.com/karma-runner/karma) - Test runner
