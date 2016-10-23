@@ -6,13 +6,13 @@ module.exports = config => {
     basePath: '../',
     frameworks: ['mocha'],
     files: [
-      'src/*.js',
-      'test/index.js'
+      'src/**/*.js',
+      'test/**/*.js'
     ],
 
     preprocessors: {
-      'src/*.js': ['webpack', 'sourcemap'],
-      'test/index.js': ['webpack', 'sourcemap']
+      'src/**/*.js': ['webpack', 'sourcemap'],
+      'test/**/*.js': ['webpack', 'sourcemap']
     },
 
     webpack: {
