@@ -41,3 +41,23 @@ Generate the scaffolding:
 ```sh
 $ yo react-lib
 ```
+
+## Development
+
+Run the example app at [http://localhost:8080](http://localhost:8080):
+
+```
+$ npm run example
+```
+
+Run tests in Chrome using [karma](https://github.com/karma-runner/karma):
+
+```
+$ npm test
+```
+
+Run tests and watch for code changes:
+
+```
+$ npm test -- --watch
+```
