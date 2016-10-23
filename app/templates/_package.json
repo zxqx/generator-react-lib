@@ -8,7 +8,6 @@
     "test": "karma start test/karma.conf.js",
     "lint": "eslint src test",
     "postinstall": "npm run build",
-    "precommit": "npm run lint",
     "preversion": "npm run build",
     "example": "node example/server.js",
     "example:build": "cross-env NODE_ENV=production webpack --config example/webpack.config.build.js"
@@ -41,7 +40,6 @@
     "eslint-plugin-react": "^3.16.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "html-webpack-plugin": "^2.22.0",
-    "husky": "^0.11.9",
     "istanbul": "^1.1.0-alpha.1",
     "json-loader": "^0.5.4",
     "karma": "^1.3.0",
