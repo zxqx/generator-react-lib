@@ -61,3 +61,15 @@ Run tests and watch for code changes:
 ```
 $ npm test -- --watch
 ```
+
+Lint `src` and `test` files:
+
+```
+$ npm run lint
+```
+
+Generate UMD output in the `lib` folder:
+
+```
+$ npm run build
+```
