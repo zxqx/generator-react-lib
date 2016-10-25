@@ -73,3 +73,7 @@ Generate UMD output in the `lib` folder:
 ```
 $ npm run build
 ```
+
+## License
+
+MIT
