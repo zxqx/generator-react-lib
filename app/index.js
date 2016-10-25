@@ -14,6 +14,12 @@ module.exports = yeoman.generators.Base.extend({
       {
         name: 'libraryDescription',
         message: 'Describe your library'
+      },
+      {
+        name: 'exportCss',
+        type: 'confirm',
+        message: 'Do you need to export a CSS file with your library?',
+        default: false
       }
     ],
     function(props) {
@@ -21,6 +27,7 @@ module.exports = yeoman.generators.Base.extend({
       this.libraryNameCamelized = _s.camelize(this.libraryName);
       this.libraryNamePascalized = _s.capitalize(this.libraryNameCamelized);
       this.libraryDescription = props.libraryDescription;
+      this.exportCss = props.exportCss;
 
       this.template('gitignore', '.gitignore');
       this.template('eslintrc', '.eslintrc');
@@ -28,10 +35,14 @@ module.exports = yeoman.generators.Base.extend({
       this.template('_package.json', 'package.json');
       this.template('webpack.config.js');
       this.template('README.md');
+      this.template('src/index.js');
       this.directory('example');
       this.directory('lib');
-      this.directory('src');
       this.directory('test');
+
+      if (this.exportCss) {
+        this.template('src/index.css');
+      }
 
       cb();
 

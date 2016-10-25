@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+<% if (exportCss) { %>const ExtractTextPlugin = require('extract-text-webpack-plugin');<% } %>
 
 const libraryName = '<%= libraryNameCamelized %>';
 
@@ -27,11 +28,28 @@ module.exports = {
         test: /(\.jsx|\.js)$/,
         loader: 'eslint-loader',
         exclude: /node_modules/
+      },
+      <% if (exportCss) { %>
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: 'css-loader'
+        })
       }
+      <% } %>
     ]
   },
   resolve: {
     extensions: ['.js']
   },
-  plugins: [new UglifyJsPlugin({ minimize: true })]
+  plugins: [
+    new UglifyJsPlugin({ minimize: true }),
+    <% if (exportCss) { %>
+    new ExtractTextPlugin({
+      filename: '<%= libraryName %>.css',
+      allChunks: true
+    })
+    <% } %>
+  ]
 };
