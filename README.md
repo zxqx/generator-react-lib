@@ -14,10 +14,8 @@ A react component generator with UMD build and browser testing infrastructure.
 * [react](https://facebook.github.io/react/) - View layer
 * [babel](https://babeljs.io/) - JS compiler
 * [webpack](https://webpack.github.io/) - UMD bundler
-* [karma](https://github.com/karma-runner/karma) - Test runner
-* [mocha](https://mochajs.org/) - Testing framework
+* [jest](https://facebook.github.io/jest/) - Test suite
 * [enzyme](https://github.com/airbnb/enzyme) - React testing utils
-* [istanbul](https://github.com/gotwarlost/istanbul) - Code coverage reporting
 * [eslint](http://eslint.org/) - Style linter
 
 ## Setup
