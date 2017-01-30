@@ -1,17 +1,13 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import chai, { expect } from 'chai';
-import chaiEnzyme from 'chai-enzyme';
+import renderer from 'react-test-renderer';
 import <%= libraryNamePascalized %> from '../src/index';
-
-chai.use(chaiEnzyme());
 
 describe('<<%= libraryNamePascalized %> />', () => {
   it('renders placeholder div', () => {
-    const component = shallow(
+    const tree = renderer.create(
       <<%= libraryNamePascalized %> />
-    );
+    ).toJSON();
 
-    expect(component.find('div')).to.be.present();
+    expect(tree).toMatchSnapshot();
   });
 });
