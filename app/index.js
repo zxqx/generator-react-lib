@@ -9,6 +9,7 @@ module.exports = yeoman.generators.Base.extend({
       {
         name: 'libraryName',
         message: 'What\'s the name of your library?',
+        required: true,
         filter: val => _s.slugify(val)
       },
       {
