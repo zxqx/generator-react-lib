@@ -8,6 +8,7 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt([
       {
         name: 'libraryName',
+        default: 'lib-name',
         message: 'What\'s the name of your library?',
         filter: val => _s.slugify(val)
       },
