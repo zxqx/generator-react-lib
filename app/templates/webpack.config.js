@@ -30,8 +30,5 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: ['.js']
-  },
   plugins: [new UglifyJsPlugin({ minimize: true })]
 };
