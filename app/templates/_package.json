@@ -19,11 +19,6 @@
     "moduleFileExtensions": [
       "js",
       "json"
-    ],
-    "collectCoverage": "true",
-    "coverageDirectory": "coverage",
-    "coverageReporters": [
-      "lcov"
     ]
   },
   "keywords": [

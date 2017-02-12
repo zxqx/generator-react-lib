@@ -9,20 +9,11 @@
   "keywords": [
     "yeoman-generator",
     "generator",
-    "plugin",
-    "component",
-    "library",
-    "boilerplate",
-    "template",
-    "scaffold",
-    "starter",
-    "kit",
-    "seed",
     "react",
-    "webpack",
-    "babel",
-    "jest",
-    "enzyme"
+    "component",
+    "plugin",
+    "library",
+    "boilerplate"
   ],
   "repository": {
     "type": "git",
