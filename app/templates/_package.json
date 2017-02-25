@@ -10,7 +10,7 @@
     "test:watch": "npm test -- --watchAll",
     "lint": "eslint src test",
     "postinstall": "npm run build",
-    "version": "npm run build",
+    "preversion": "npm run build",
     "example": "webpack-dev-server --config example/webpack.config.js",
     "example:build": "cross-env NODE_ENV=production webpack --config example/webpack.config.build.js"
   },
