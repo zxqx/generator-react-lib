@@ -5,14 +5,12 @@
   "main": "lib/<%= libraryNameCamelized %>.min.js",
   "scripts": {
     "build": "webpack",
-    "test": "jest",
-    "test:update": "jest -u",
-    "test:watch": "npm test -- --watchAll",
+    "start": "webpack-dev-server --config example/webpack.config.js",
+    "test": "jest --watchAll",
+    "test:once": "jest",
     "lint": "eslint src test",
     "postinstall": "npm run build",
-    "preversion": "npm run build && git add -A lib",
-    "example": "webpack-dev-server --config example/webpack.config.js",
-    "example:build": "cross-env NODE_ENV=production webpack --config example/webpack.config.build.js"
+    "preversion": "npm run build && git add -A lib"
   },
   "jest": {
     "testRegex": "(/test/.*|(\\.|/))\\.js?$",

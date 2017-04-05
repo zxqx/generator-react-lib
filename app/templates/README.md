@@ -23,25 +23,13 @@ $ npm install
 Run the example app at [http://localhost:8080](http://localhost:8080):
 
 ```
-$ npm run example
+$ npm start
 ```
 
-Run tests using [jest](https://github.com/facebook/jest):
+Run tests and watch for code changes using [jest](https://github.com/facebook/jest):
 
 ```
 $ npm test
-```
-
-Update test snapshots:
-
-```
-$ npm run test:update
-```
-
-Run tests and watch for code changes:
-
-```
-$ npm run test:watch
 ```
 
 Lint `src` and `test` files:
@@ -50,8 +38,12 @@ Lint `src` and `test` files:
 $ npm run lint
 ```
 
-Generate UMD output in the `lib` folder:
+Generate UMD output in the `lib` folder (runs implicitly on `npm version`):
 
 ```
 $ npm run build
 ```
+
+## License
+
+MIT
