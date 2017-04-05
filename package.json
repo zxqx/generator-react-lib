@@ -6,6 +6,12 @@
   "files": [
     "app"
   ],
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testRegex": "test/index.spec.js"
+  },
   "keywords": [
     "yeoman-generator",
     "generator",
@@ -24,7 +30,10 @@
     "email": "zaknotzak@gmail.com"
   },
   "dependencies": {
+    "jest": "^19.0.2",
     "underscore.string": "^3.0.3",
-    "yeoman-generator": "^0.20.1"
+    "yeoman-assert": "^3.0.0",
+    "yeoman-generator": "^0.20.1",
+    "yeoman-test": "^1.6.0"
   }
 }

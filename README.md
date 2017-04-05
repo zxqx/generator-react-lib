@@ -2,6 +2,8 @@
 
 A react component generator with UMD build and browser testing infrastructure.
 
+[![Circle CI](https://circleci.com/gh/zakangelle/generator-react-lib/tree/master.svg?style=shield)](https://circleci.com/gh/zakangelle/generator-react-lib/tree/master)
+
 <img src='https://www.dropbox.com/s/txxcc9awy2uhx11/generator-react-lib.gif?raw=1' width='400px'>
 
 ## Requirements
