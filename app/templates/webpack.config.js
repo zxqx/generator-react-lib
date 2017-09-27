@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 const libraryName = '<%= libraryNameCamelized %>';
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
