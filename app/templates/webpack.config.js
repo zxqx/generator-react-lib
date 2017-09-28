@@ -1,23 +1,26 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 const libraryName = '<%= libraryNameCamelized %>';
 const isProduction = process.env.NODE_ENV === 'production';
 const enableSourcemaps = true
+const name = process.env.FOLDER ? libraryName : 'index';
+const filename = name + (isProduction ? '.min.js' : '.js');
 
 const extractStyles = new ExtractTextPlugin({
   filename: 'styles/[name].[contenthash].css',
   allChunks: true,
   disable: !isProduction
-})
+});
 
 const config = {
-  entry: path.join(__dirname, 'src/index.js'),
+  entry: {
+    main: path.join(__dirname, 'src/index.js')
+  },
   output: {
-    path: path.join(__dirname, 'lib'),
-    filename: libraryName + (isProduction ? '.min.js' : '.js'),
+    path: path.join(__dirname, process.env.FOLDER || 'lib'),
+    filename,
     library: libraryName,
     libraryTarget: 'umd',
     umdNamedDefine: true
@@ -76,7 +79,7 @@ const config = {
 };
 
 if (isProduction) {
-  config.plugins.push(new UglifyJsPlugin({ minimize: true }))
+  config.plugins.push(new webpack.optimize.UglifyJsPlugin({ minimize: true }))
 }
 
 module.exports = config

@@ -2,14 +2,8 @@
   "presets": ["react", "env"],
   "plugins": ["add-module-exports"],
   "env": {
-    "es": {
+    "umd": {
       "comments": false
-    },
-    "commonjs": {
-      "comments": false
-    },
-    "test": {
-      
     }
   }
 }
