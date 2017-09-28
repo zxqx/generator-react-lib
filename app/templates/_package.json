@@ -13,7 +13,7 @@
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack",
     "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack",
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
-    "watch": "npm run build:lib -- --watch",
+    "watch": "npm run build:commonjs -- --watch",
     "start": "webpack-dev-server --config example/webpack.config.js",
     "test": "jest --watchAll",
     "test:once": "jest",
