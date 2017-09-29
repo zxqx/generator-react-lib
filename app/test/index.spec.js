@@ -28,7 +28,7 @@ describe('generator-react-lib', () => {
   });
 
   it('generates package.json file', () => {
-    assert.fileContent('package.json', /"name": "react-jelly"/);
+    assert.fileContent('package.json', /"name": "jelly"/);
     assert.fileContent('package.json', /"description": "some description"/);
   });
 
