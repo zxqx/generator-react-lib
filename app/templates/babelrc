@@ -1,4 +1,14 @@
 {
-  "presets": ["react", "es2015", "stage-0"],
-  "plugins": ["add-module-exports"]
+  "presets": ["react", "env"],
+  "plugins": ["add-module-exports"],
+  "env": {
+    "es": {
+      "comments": false,
+      "minified": true
+    },
+    "commonjs": {
+      "comments": false,
+      "minified": true
+    }
+  }
 }
